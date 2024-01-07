@@ -1,0 +1,64 @@
+/* === Task List Container === */
+.task-list-container {
+    padding: 20px 20px 20px 20px; /* accommodates for the 5px margin-bottom of the last list item */
+    position: relative;
+    margin-top: 20px;
+    border-radius: var(--secondary-radius);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+    -webkit-border-radius: var(--secondary-radius);
+    -moz-border-radius: var(--secondary-radius);
+    -ms-border-radius: var(--secondary-radius);
+    -o-border-radius: var(--secondary-radius);
+}
+
+/* === Task List Header === */
+.task-list-header {
+    display: flex;
+    justify-content: space-between; /* This aligns the text to the left and the container to the right */
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.task-list-header-left-side{
+    display: flex;
+    align-items: center; /* Aligns the counter and plus button vertically */
+}
+
+.task-list-header-left-side i{
+    margin-right: 10px;
+}
+#task-list-header-text { /**/}
+
+.task-list-header-right-side {
+    display: flex;
+    align-items: center; /* Aligns the counter and plus button vertically */
+}
+
+.task-list-header-right-side i{
+    margin-left: 20px;
+    transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+    -webkit-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+    -moz-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+    -ms-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+    -o-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+}
+
+.task-list-header-right-side p{
+    margin-left: 20px;
+}
+
+#task-list-header-plus:hover{
+    color: var(--icon-color-1);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#task-list-header-delete:hover{
+    color: var(--icon-color-2);
+    font-size: 22px;
+    cursor: pointer;
+}
+

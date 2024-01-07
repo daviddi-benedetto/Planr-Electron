@@ -1,0 +1,31 @@
+.task{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 5px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    overflow: none  ;
+}
+
+.task-icon-incomplete{
+    margin-right: 10px;
+}
+
+.task-text{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.fa-xmark:hover{
+    color: var(--icon-color-2);
+    cursor: pointer;
+}

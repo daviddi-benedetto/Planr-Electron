@@ -1,0 +1,180 @@
+/* ======================== Imports ======================== */
+
+/* header.css */ @import url('css/header.css');
+/* task-container.css */ @import url('css/task-container.css');
+/* task.css */ @import url('css/task.css');
+
+
+/* ======================== Variables ======================== */
+
+:root {
+  /* Colors */
+  --background-color: #161616;
+  --primary-color: #2c2c2c;
+  --secondary-color: #434343;
+  --tertiary-color: whitesmoke; /* Light Gray */
+  --light-text-color: #f8f8f8;
+
+  /* Icons */
+  --header-icon-size: 18px;
+  --icon-color-1: #06d6a0;
+  --icon-color-2: #ef476f;
+  --icon-color-3: #ffd166;
+  --icon-color-4: #118ab2;
+  --icon-color-5: #073b4c;
+
+  /* Section Heights */
+  --header-height: 7vh;
+  --section-height: calc(100vh - var(--header-height));
+
+  /* Borders */
+  --primary-radius: 40px;
+  --secondary-radius: 20px;
+
+  /* Animations */
+  --hover-animation-time: 0.15s;
+}
+
+/* ======================== Global ======================== */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--light-text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  min-width: 100vw;
+}
+
+/* Typography */
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+i{
+  transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -webkit-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -moz-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -ms-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -o-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+}
+/* Elements */
+input:focus {
+  outline: none;
+}
+
+/* Layout - Grid */
+.layout {
+  height: 100vh;
+  width: 90vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+      "header header header"
+      "leftSide middle rightSide";
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  column-gap: 20px;
+}
+
+/* ======================== Header ======================== */
+/* header.css would go here (imported above) */
+
+/* ======================== Left Side ======================== */
+
+/* Main Left Side Container */
+.leftSide {
+  grid-area: leftSide;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: calc(var(--section-height) - 60px); /* Adjusted for padding */
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  overflow: auto; /* Add scroll if content overflows */
+}
+
+#notes {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-indent: 20px;
+}
+
+/* ======================== Middle Section ======================== */
+.middle {
+  grid-area: middle;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: var(--section-height);
+  margin-bottom: 20px;
+}
+
+/* === Task Section === */
+.projects-section {}
+
+/* === Tasks Section Header === */
+.tasks-section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tasks-section-header-text {}
+
+#add-new-task-list-button{
+  font-size: 30px;
+  transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -webkit-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -moz-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -ms-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -o-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+}
+
+#add-new-task-list-button:hover{
+  font-size: 34px;
+  color: var(--icon-color-3);
+  cursor: pointer;
+}
+
+/* === Task List Container === */
+/* task-container.css would go here (imported above) */
+
+/* === Task List === */
+/* task.css would go here (imported above) */
+
+/* ======================== Right Side ======================== */
+
+/* Main Right Side Container */
+.rightSide {
+  grid-area: rightSide;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px;
+  height: calc(var(--section-height) - 60px); /* Adjusted for padding */
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}

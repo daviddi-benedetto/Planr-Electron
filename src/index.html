@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+
+   <!------------------ Imports ------------------>
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!------------------ Defered Scripts ------------------>
+    <script defer src="functions.js"></script>
+
+  </head>
+  <body>
+    <section class="layout">
+      <!------------------ Header ------------------>
+      <!--- Header Imported Into Div Below --->
+      <div class="header">
+          <div class="navigation-container">
+              <i class="fa-solid fa-house header-icon"></i> <p class="header-text">Home</p>
+              <i class="fa-solid fa-chart-simple header-icon"></i> <p class="header-text">Analytics</p>
+          </div>
+          <div class="logo-container">
+              <img src="svg-icons/Replanner Small Logo.svg" class="replanner-logo">
+          </div>
+          <div class="options-container">
+              <i class="fa-solid fa-palette options-icon header-icon" style="color: var(--icon-color-2);"></i>
+              <i class="fa-solid fa-gear options-icon header-icon" style="color: var(--icon-color-3);"></i>
+              <i class="fa-solid fa-user options-icon header-icon" style="color: var(--icon-color-4);"></i>
+              <i class="fa-solid fa-angle-up options-icon header-icon" style="color: var(--icon-color-1);"></i>
+          </div>
+      </div>
+
+      <!------------------ Left Side ------------------>
+      <div class="leftSide">
+          <h1 id="notesHeader">Notes</h1>
+          <p id="notes"></p>
+      </div>
+
+      <!------------------ Middle Section ------------------>
+      <div class="middle">
+
+          <!-- Projects Section -->
+          <div id="projects-section">
+
+              <!-- Tasks Section Header -->
+              <div class="tasks-section-header">
+                  <h1 id="tasks-section-header-text">My Tasks</h1>
+                  <i id="add-new-task-list-button" class="fa-solid fa-circle-plus"></i>
+              </div>
+
+              <!--- Task-Container Injected Here --->
+          </div>
+      </div>
+
+
+      <!------------------ Right Side ------------------>
+      <div class="rightSide">
+          <h1 id="notesHeader">Calendar</h1>
+          <p id="notes"></p>
+      </div>
+  </section>
+  </body>
+</html>

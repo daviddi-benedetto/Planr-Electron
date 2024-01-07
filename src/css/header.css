@@ -1,0 +1,65 @@
+/* ======================== Header ======================== */
+
+/* Main Header Container */
+.header {
+    background-color: var(--primary-color);
+    height: var(--header-height);
+    grid-area: header;
+    margin-top: var(--secondary-radius);
+    margin-bottom: var(--secondary-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--secondary-radius);
+    -webkit-border-radius: var(--secondary-radius);
+    -moz-border-radius: var(--secondary-radius);
+    -ms-border-radius: var(--secondary-radius);
+    -o-border-radius: var(--secondary-radius);
+}
+
+.header-icon {
+    font-size: var(--header-icon-size);
+}
+
+/* Header - Left Section (Navigation) */
+.navigation-container {
+    width: 33%;
+    display: flex;
+    align-items: center; /* Center align vertically */
+    justify-content: flex-start; /* Align content to the left */
+    padding: 10px 30px 10px 30px;
+}
+
+.header-text {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+/* Header - Middle Section (Logo) */
+.logo-container {
+    width: 33%;
+    display: flex;
+    align-items: center; /* Center align vertically */
+    justify-content: center; /* Center the content */
+}
+
+.replanner-logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Header - Right Section (Options) */
+.options-container {
+    width: 33%;
+    display: flex;
+    align-items: center; /* Center align vertically */
+    justify-content: flex-end; /* Align content to the right */
+    font-size: var(--header-icon-size);
+    color: var(--secondary-color);
+    padding: 10px 30px 10px 30px;
+}
+
+.options-icon {
+    margin-left: 30px;
+}
