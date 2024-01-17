@@ -1,0 +1,42 @@
+/* ======================== Middle Section ======================== */
+.middle {
+  grid-area: middle;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: var(--section-height);
+  margin-bottom: 20px;
+}
+
+/* === Task Section === */
+.projects-section {}
+
+/* === Tasks Section Header === */
+.tasks-section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tasks-section-header-text {}
+
+#add-new-task-list-button{
+  font-size: 30px;
+  transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -webkit-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -moz-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -ms-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+  -o-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
+}
+
+#add-new-task-list-button:hover{
+  font-size: 14px;
+  color: var(--icon-color-1);
+  cursor: pointer;
+}
+
+/* === Task List Container === */
+/* task-container.css would go here (imported above) */
+
+/* === Task List === */
+/* task.css would go here (imported above) */

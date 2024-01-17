@@ -1,10 +1,9 @@
 /* ======================== Imports ======================== */
 
 /* header.css */ @import url('css/header.css');
-/* task-container.css */ @import url('css/task-container.css');
-/* task.css */ @import url('css/task.css');
-
-
+/* middle.css */ @import url('css/middle.css');
+  /* task-container.css */ @import url('css/task-container.css');
+  /* task.css */ @import url('css/task.css');
 /* ======================== Variables ======================== */
 
 :root {
@@ -24,7 +23,7 @@
   --icon-color-5: #073b4c;
 
   /* Section Heights */
-  --header-height: 7vh;
+  --header-height: 30px;
   --section-height: calc(100vh - var(--header-height));
 
   /* Borders */
@@ -83,7 +82,7 @@ input:focus {
 /* Layout - Grid */
 .layout {
   height: 100vh;
-  width: 90vw;
+  width: 100vw;
   overflow: hidden;
   display: grid;
   grid-template-areas:
@@ -93,9 +92,6 @@ input:focus {
   grid-template-columns: 1fr 2fr 1.5fr;
   column-gap: 20px;
 }
-
-/* ======================== Header ======================== */
-/* header.css would go here (imported above) */
 
 /* ======================== Left Side ======================== */
 
@@ -117,49 +113,6 @@ input:focus {
   margin-left: 20px;
   text-indent: 20px;
 }
-
-/* ======================== Middle Section ======================== */
-.middle {
-  grid-area: middle;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: var(--section-height);
-  margin-bottom: 20px;
-}
-
-/* === Task Section === */
-.projects-section {}
-
-/* === Tasks Section Header === */
-.tasks-section-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#tasks-section-header-text {}
-
-#add-new-task-list-button{
-  font-size: 30px;
-  transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
-  -webkit-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
-  -moz-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
-  -ms-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
-  -o-transition: color var(--hover-animation-time) ease, font-size var(--hover-animation-time) ease;
-}
-
-#add-new-task-list-button:hover{
-  font-size: 34px;
-  color: var(--icon-color-3);
-  cursor: pointer;
-}
-
-/* === Task List Container === */
-/* task-container.css would go here (imported above) */
-
-/* === Task List === */
-/* task.css would go here (imported above) */
 
 /* ======================== Right Side ======================== */
 
